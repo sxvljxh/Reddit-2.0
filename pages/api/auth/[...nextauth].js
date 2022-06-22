@@ -15,5 +15,5 @@ export default NextAuth({
             clientSecret: process.env.GOOGLE_CLIENT_SECRET
         })
     ],
-    secret: 'IamVeryHandsome'
+    secret: `${process.env.NEXT_AUTH_SECRET}` //entah kenapa apke ini biar ga error di reddit
 })
