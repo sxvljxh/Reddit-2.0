@@ -22,7 +22,7 @@ function Header() {
   // console.log(session);
 
   return (
-    <div className="sticky top-0 z-50 flex items-center px-4 py-2 bg-white shadow-sm">
+    <div className="sticky top-0 z-50 flex items-center px-4 py-2 space-x-3 bg-white shadow-sm">
       <div className="relative flex-shrink-0 w-20 h-10 cursor-pointer">
         <Link href={"/"} rel="aaa">
           <Image
@@ -35,7 +35,7 @@ function Header() {
         </Link>
       </div>
 
-      <div className="flex items-center mx-7 xl:min-w-[300px]">
+      <div className="items-center mx-7 xl:min-w-[300px] hidden lg:flex">
         <HomeIcon className="w-5 h-5" />
         <p className="flex-1 hidden ml-2 lg:inline">Home</p>
         <ChevronDownIcon className="w-5 h-5" />
